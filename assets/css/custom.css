@@ -163,7 +163,7 @@ nav {
 }
 
 .daily {
-  background-color: grey;
+  background-color: rgb(153, 13, 13);
   color: #fff !important;
   padding: 5px 10px;
   border-radius: 5px;
@@ -517,7 +517,7 @@ h4 {
 
 .btn-buy {
     color: rgb(2, 2, 2);
-    background-color: #636364;
+    background-color: #ad1414;
     border-radius: 8px;
     /* border-color: #354D5F; */
     font-weight: 600;
