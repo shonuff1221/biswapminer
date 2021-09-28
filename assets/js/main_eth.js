@@ -58,7 +58,7 @@ function copyToClipboard(element) {
     $("body").append($temp);
     $temp.val($(element).text()).select();
     document.execCommand("copy");
-    copiedText =$("<input>");
+    $temp.remove();
     
     alert("Copied:\n"+ window.location.origin+"?ref="+currentAddr);
   }
