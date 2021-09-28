@@ -53,14 +53,14 @@ function approve() {
     var trxspenddoc=document.getElementById('spend-allowance')
     approveBUSD(web3.utils.toWei(trxspenddoc.value));
 }
-function copyRef() {
-    var copyText = document.getElementById("copytextthing");
-    copyText.style.display="block"
-    copyText.select();
-    document.execCommand("Copy");
-    copyText.style.display="none"
-    displayModalMessage("copied link to clipboard")
-    //alert("Copied the text: " + copyText.value);
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    copiedText =$("<input>");
+    
+    alert("Copied:\n"+ window.location.origin+"?ref="+currentAddr);
   }
   
 
